@@ -1,0 +1,57 @@
+.header {
+    background: #ff9800;
+    height: 200px;
+    .headertext{
+        font-size: 45px !important;
+    }
+}
+
+
+
+.imageGridItem {
+    height: 184px;
+    padding: 2px;
+}
+
+.imagebox {
+    height: 100%;
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-fluid {
+    // max-width: 100%;
+    // height: auto;
+    top: 50%;
+    width: 100%;
+    position: relative;
+    transform: translateY(-50%);
+    // height: 100%;
+}
+
+.videoplayer {
+    height: 300px !important;
+}
+
+@media screen and (max-width: 789px) {
+    .header {
+        height: 100px;
+        .headertext{
+            font-size: 25px !important;
+        }
+    }
+
+    .imageGridItem {
+        height: auto;
+        padding: 0px 2px;
+    }
+
+    .videoplayer {
+        height: 180px !important;
+    }
+}
+
+.text-white{
+    color:white !important;
+}
