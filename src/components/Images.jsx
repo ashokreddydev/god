@@ -89,7 +89,7 @@ function Images() {
     const classes = useStyles();
     const [imgIds, setImgIds] = useState([]);
     const data = {
-        gkey: "",
+        gkey: "AIzaSyDCR6dWExzaR7sGBmWCrYoQohI2SJnhLIw",
         options: {
             style: {
             },
@@ -108,7 +108,7 @@ function Images() {
             },
             hover: true
         },
-        dirId: ""
+        dirId: "1p8X-2uyAH41KsNFSiEm847w5dQ"
 
     }
     const GOOGLE_API_KEY = data.gkey;
