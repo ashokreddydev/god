@@ -23,5 +23,5 @@ jobs:
         cache: 'npm'
         # cache-dependency-path: 'subdir/package-lock.json'
     # - run: npm ci
-    - run: cp -r client/build /var/www/html
+    - run: cp -r build /var/www/html
     - run: sudo systemctl restart nginx
