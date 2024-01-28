@@ -8,7 +8,7 @@ function Header() {
     return (
         <Box className="header" display={'flex'} alignItems={'center'} justifyContent={'center'}>
             <Typography variant="h4" className="text-white headertext">
-             Sri Sri Kalimata 
+            Sri Sri Kalikamatha
             </Typography>
         </Box>
     )

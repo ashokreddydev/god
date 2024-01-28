@@ -148,7 +148,7 @@ function Images() {
                 {imgIds && imgIds.map((item, index) =>
                     <Grid item xs={6} md={3} className="imageGridItem" key={item.id}>
                         <Box className="imagebox">
-                            <img src={GOOGLE_DRIVE_IMG_URL + item.id} alt={item.title} className="image-fluid" />
+                            <img src={item.downloadUrl} alt={item.title} className="image-fluid" />
                         </Box>
                     </Grid>
                 )}
