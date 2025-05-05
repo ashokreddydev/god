@@ -9,10 +9,10 @@ const PORT = 5000;
 
 app.use(cors());
 
-app.use('/images', express.static(path.join(__dirname, 'downloads')));
+app.use('/api/images', express.static(path.join(__dirname, 'downloads')));
 
 // Get list of image URLs
-app.get('/images-list', (req, res) => {
+app.get('/api/images-list', (req, res) => {
   const dirPath = path.join(__dirname, 'downloads');
   if (!fs.existsSync(dirPath)) {
     return res.json([]);
@@ -23,7 +23,7 @@ app.get('/images-list', (req, res) => {
   );
 
 //   const urls = files.map(name => `http://localhost:${PORT}/images/${name}`);
-const urls = files.map(name => `/images/${name}`);
+const urls = files.map(name => `/api/images/${name}`);
   res.json(urls);
 });
 
@@ -33,7 +33,7 @@ cron.schedule('0 2 * * *', async () => {
     await downloadImages();
   });
 
-app.get('/download-now', async (req, res) => {
+app.get('/api/download-now', async (req, res) => {
     listAndDownloadImages();
   res.json({ message: 'Download started' });
 });

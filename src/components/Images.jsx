@@ -27,7 +27,7 @@ function Images() {
     const [images, setImages] = useState([]);
 
     useEffect(() => {
-        fetch('/images-list') //
+        fetch('/api/images-list') //
         .then(res => res.json())
         .then(data => setImages(data))
         .catch(err => console.error('Failed to fetch images:', err));
